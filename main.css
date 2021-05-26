@@ -1,0 +1,291 @@
+body {
+    background-color: #fff;
+    margin: 0px;
+    font-family: Segoe UI;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.left-div {
+    position: fixed;
+    background-color: #1b2c3b;
+    height: 100%;
+    width: 20%;
+}
+
+.main {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+.main-top {
+    width: 100%;
+    height: 40px;
+    padding:10px;
+    background-color: #f4f4f4;
+}
+
+.select {
+    font-family: Segoe UI;
+    position: absolute;
+    right: 0;
+    padding-right: 5%;
+    display: flex;
+}
+
+.switch {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #579359;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: #ccc;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+
+
+
+.top-alert {
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+.top-alert img {
+    margin-top: -1%;
+    padding-right:20%;
+    max-width: 10%;
+    height: auto;
+}
+
+
+
+
+.number-list {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.number-deco {
+    width: 250px;
+    height: auto;
+    font-weight: 400;
+}
+
+.number-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-color:gray;
+    color: white;
+    font-size: 55px;
+}
+
+.number-line {
+    width: 0px;
+    height: 100px;
+    margin-top: 4%;
+    background-color:gray;
+    transform: rotate(90deg);
+}
+
+#number-box-check {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: #579359;
+    color: white;
+    font-size: 55px;
+}
+
+#number-check {
+    color: #579359;
+}
+
+#number-desc {
+    font-weight: 600;
+}
+
+
+
+
+.box-center {
+    width: 85%;
+    height: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+}
+
+.box-center-space {
+    display: flex;
+    flex-direction: row;
+}
+.box-center-column {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.box-center-row {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.box-center-img {
+    max-width: 50px;
+    height: auto;
+}
+
+.box-center-text {
+    padding-left: 2%;
+}
+
+.box-center-text p {
+    color:#555;
+}
+
+.box-center-avatar {
+    max-width: 34%; 
+    position: absolute; 
+    right:0; 
+    margin-right: 20px;
+}
+
+.box-center-seta {
+    margin-top: -10%;
+    padding-left:90%;
+    max-width: 30px;
+    height: auto;
+}
+
+
+
+.buttons-group {
+    width: 85%;
+    height: 100%;
+    margin: 20px;
+    margin-left: -40px;
+    text-align:left;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.button {
+    background-color: #56bfbf;
+    width: 250px;
+    height: 25px;
+    border-radius: 2px;
+    border: 0;
+    font-family: Segoe UI;
+    font-weight: 600;
+    font-size:large;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px;
+    margin-right: 25px;
+}
+
+#no {
+    background-color: #cacaca;
+}
+
+
+.box-bottom {
+    width: 90%;
+    height: 100%;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.box-bottom-row {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.box-bottom-video {
+    width: 700px;
+    height: 400px;
+    background-color: #c9c9c9;
+}
+
+.box-bottom-text {
+    text-align: left;
+    max-width: 40%;
+    padding-inline-start: 20px;
+}
+
+
+@media screen and (max-width: 1350px) {
+    div.left-div {
+        display: none;
+    }
+
+    div.main {
+        margin-left: 0%;
+    }
+
+    div.box-center-column {
+        max-width: 100%;
+    }
+
+    img.box-center-avatar {
+        display: none;
+    }
+}
