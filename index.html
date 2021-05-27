@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>TeamFree - Projeto Publicado com Sucesso</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
 </head>
+
 <body>
     <div class="container">
-        <div class="left-div">
-        </div>
 
-        <div class="main">
+        <!--Barra Lateral-->
+
+        <div id="sidebar">
+        </div>
+        
+
+        <!--Barra Superior-->
+
+        <div class="top-bar">
             <div class="select">
                 <p>Cliente</p>
                 <label class="switch">
@@ -20,128 +30,142 @@
                     <span class="slider"></span>
                 </label>
                 <p>Freelancer</p>
-            </div>
-            <div class="main-top">
-                
-            </div>
+            </div> 
+        </div>
+        
 
+        <!--Aviso Principal-->
 
+        <main> 
+            <h1>Parabéns por publicar seu projeto!</h1>
+            <h2 style="color: #e08d6a;">E agora?</h2>
+            <img src="./img/seta-1.svg">
+        </main>
+    
+        
+        <!--Lista dos Passos-->
+
+        <div id="main-steps"> 
             <center>
-                <div class="top-alert">
-                    <h1>Parabéns por publicar seu projeto!</h1>
-                    <h2 style="color: #e08d6a; display: table-cell;">E agora?</h2>
-                    <img src="./img/seta-1.svg">
-                </div>
-                
-
                 <div class="number-list">
+    
                     <div class="number-deco" id="number-check">
                         <div class="number-box" id="number-box-check">
                             <p>1</p>
                         </div>
                         <p id="number-desc">Projeto publicado</p>
                     </div>
-                    
-                    <hr class="number-line">
-
+    
+                    <!--Colocar separador-->
+            
                     <div class="number-deco">
                         <div class="number-box">
                             <p>2</p>
                         </div>
                         <p id="number-desc">Receberá propostas</p>
                     </div>
-                    
-                    <hr class="number-line">
-
+    
+                    <!--Colocar separador-->
+            
                     <div class="number-deco">
                         <div class="number-box">
                             <p>3</p>
                         </div>
                         <p id="number-desc">Escolha a melhor proposta</p>
                     </div>
-                    
-                    <hr class="number-line">
-
+    
+                    <!--Colocar separador-->
+            
                     <div class="number-deco">
                         <div class="number-box">
                             <p>4</p>
                         </div>
                         <p id="number-desc">Realize o pagamento em garantia</p>
                     </div>
+    
+                    <!--Colocar separador-->
                     
-                    <hr class="number-line">
-
                     <div class="number-deco">
                         <div class="number-box">
                             <p>5</p>
                         </div>
                         <p id="number-desc">Comece o projeto</p>
                     </div>
-                </div>
-
-                
-                <div class="box-center">
-                    <div class="box-center-space">
-                        <div class="box-center-column">
-                            <div class="box-center-row">
-                                <img src="./img/icon-receber-proppostas.svg" style="max-width: 80px;">
-                                <div class="box-center-text">
-                                    <h2>Logo você comecará a receber propostas</h2>
-                                    <h3 style="color: #e08d6a;">Entretanto, esses conselhos podem te ajudar.</h3>
-                                    <img class="box-center-seta" src="./img/seta-2.svg">
-                                </div>
-                            </div>
-
-                            <div class="box-center-row">
-                                <img class="box-center-img" src="./img/icon-propostas.svg">
-                                <div class="box-center-text">
-                                    <h4>Propostas</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto fuga mollitia assumenda quasi at eius placeat non quidem inventore voluptates necessitatibus, enim, minus magni amet! Ea veniam ipsa a! </p>
-                                </div>
-                            </div>
-        
-                            <div class="box-center-row">
-                                <img class="box-center-img" src="./img/icon-mensagens.svg">
-                                <div class="box-center-text">
-                                    <h4>Mensagens</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto fuga mollitia assumenda quasi at eius placeat non quidem inventore voluptates necessitatibus, enim, minus magni amet! Ea veniam ipsa a! </p>
-                                </div>
-                            </div>
-        
-                            <div class="box-center-row">
-                                <img class="box-center-img" src="./img/icon-perfil.svg">
-                                <div class="box-center-text">
-                                    <h4>Perfil</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto fuga mollitia assumenda quasi at eius placeat non quidem inventore voluptates necessitatibus, enim, minus magni amet! Ea veniam ipsa a! </p>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="box-center-avatar" src="./img/avatar-projeto-publicad.svg">
-                    </div>
-                </div>
-
-
-                <div class="buttons-group">
-                    <a href="#" class="button">EDITAR MEU PROJETO</a>
-                    <a href="#" class="button">PUBLICAR OUTRO PROJETO</a>
-                    <a href="#" class="button" id="no">PULAR ETAPA</a>
-                </div>
-
-
-                <div class="box-bottom">
-                    <div class="box-bottom-row">
-                        <a class="box-bottom-video">video</a>
-                        <div class="box-bottom-text">
-                            <h2>Veja neste video como o TeamFreela funciona</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet dolorum sunt debitis maiores ducimus quo ad maxime officia deserunt. Dolorum quaerat esse aspernatur consequuntur praesentium nostrum sapiente possimus ab.</p>
-                            <a href="#" class="button">CONFIRA NOSSA AJUDA</a>
-                        </div>
-                    </div>
+            
                 </div>
             </center>
         </div>
         
-    </div>
+
+        <!--Centro-->
+
+        <div id="main-box"> 
+            <div class="box-center">
+                <div class="box-center-space">
+                    <div class="box-center-column">
+                        <div class="box-center-row">
+                            <img src="./img/icon-receber-proppostas.svg" style="max-width: 80px;">
+                            <div class="box-center-text">
+                                <h2>Logo você comecará a receber propostas</h2>
+                                <h3 style="color: #e08d6a;">Entretanto, esses conselhos podem te ajudar.</h3>
+                                <img class="box-center-seta" src="./img/seta-2.svg">
+                            </div>
+                        </div>
+                        
+                        <div class="box-center-row" style="margin-top: 6%;">
+                            <img class="box-center-img" src="./img/icon-propostas.svg">
+                            <div class="box-center-text">
+                                <h4>Propostas</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto fuga mollitia assumenda quasi at eius placeat non quidem inventore voluptates necessitatibus, enim, minus magni amet! Ea veniam ipsa a! </p>
+                            </div>
+                        </div>
+            
+                        <div class="box-center-row">
+                            <img class="box-center-img" src="./img/icon-mensagens.svg">
+                            <div class="box-center-text">
+                                <h4>Mensagens</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto fuga mollitia assumenda quasi at eius placeat non quidem inventore voluptates necessitatibus, enim, minus magni amet! Ea veniam ipsa a! </p>
+                            </div>
+                        </div>
+            
+                        <div class="box-center-row">
+                            <img class="box-center-img" src="./img/icon-perfil.svg">
+                            <div class="box-center-text">
+                                <h4>Perfil</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error architecto fuga mollitia assumenda quasi at eius placeat non quidem inventore voluptates necessitatibus, enim, minus magni amet! Ea veniam ipsa a! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="box-center-avatar" src="./img/avatar-projeto-publicad.svg">
+                </div>
+            </div>
+        </div>
     
+
+        
+        <!--Botões-->
+
+        <div id="main-buttons">
+            <a href="#" class="button">EDITAR MEU PROJETO</a>
+            <a href="#" class="button">PUBLICAR OUTRO PROJETO</a>
+            <a href="#" class="button" id="no">PULAR ETAPA</a>
+        </div>
+
+
+
+        <!--Botões-->
+
+        <footer>
+            <div class="box-bottom-row">
+                <a class="box-bottom-video">video</a>
+                <div class="box-bottom-text">
+                    <h2>Veja neste video como o TeamFreela funciona</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi amet dolorum sunt debitis maiores ducimus quo ad maxime officia deserunt. Dolorum quaerat esse aspernatur consequuntur praesentium nostrum sapiente possimus ab.</p>
+                    <a href="#" class="button">CONFIRA NOSSA AJUDA</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

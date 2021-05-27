@@ -1,148 +1,190 @@
 body {
-    background-color: #fff;
-    margin: 0px;
-    font-family: Segoe UI;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fff;
+  width:100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
 
 .container {
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: 0.1fr 0.5fr 0.5fr 2.0fr;
+  grid-template-areas:
+    "sidebar switch"
+    "sidebar main"
+    "sidebar main-steps"
+    "sidebar main-box"
+    "sidebar main-buttons"
+    "sidebar footer";
+  font-size: 13px;
+  color: black;
+  text-align: center;
 }
 
-.left-div {
-    position: fixed;
-    background-color: #1b2c3b;
-    height: 100%;
-    width: 20%;
-}
 
-.main {
-    display: grid;
-    place-items: center;
-    padding: 10px;
-    margin-left: 20%;
-}
 
-.main-top {
-    width: 100%;
-    height: 40px;
-    padding:10px;
-    background-color: #f4f4f4;
+.top-bar {
+  background: #f4f4f4;
+  grid-area: switch;
+  padding: 1%;
+  display: flex;
+  
 }
 
 .select {
-    font-family: Segoe UI;
-    position: absolute;
-    right: 0;
-    padding-right: 5%;
-    display: flex;
+  display: flex;
+  margin-left: auto;
+  margin-right: 5%;
+  align-items: center;
+  justify-content: right;
+  
 }
 
 .switch {
-    margin: 10px;
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
+  margin: 10px;
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
 }
-  
+
 .switch input { 
-    opacity: 0;
-    width: 0;
-    height: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
-  
+
 .slider {
-    position: absolute;
-    cursor: pointer;
-    border-radius: 15px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  cursor: pointer;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
-  
+
 .slider:before {
-    position: absolute;
-    content: "";
-    border-radius: 50%;
-    height: 12px;
-    width: 12px;
-    left: 4px;
-    bottom: 4px;
-    background-color: #579359;
-    -webkit-transition: .4s;
-    transition: .4s;
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #579359;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
-  
+
 input:checked + .slider {
-    background-color: #ccc;
+  background-color: #ccc;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+
+
+main {
+  grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: 1%;
+  font-size: 20px;
+}
+
+main img {
+  margin-top: -3%;
+  padding-right:20%;
+  max-width: 10%;
+  height: auto;
+}
+
+
+#sidebar {
+  background: #1b2c3b;
+  grid-area: sidebar;
+}
+
+#main-steps {
+  grid-area: main-steps;
+  margin: 0 5%;
+}
+
+#main-box {
+  grid-area: main-box;
+  margin: 0%;
+}
+
+#main-buttons {
+  grid-area: main-buttons;
+  width: 70%;
+  height: auto;
+  margin-left: 5%;
+  margin-top: 1%;
+  text-align:left;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+footer {
+  grid-area: footer;
+  width: 85%;
+  margin: 5%;
+  height: auto;
 }
   
-input:checked + .slider:before {
-    -webkit-transform: translateX(20px);
-    -ms-transform: translateX(20px);
-    transform: translateX(20px);
-}
-
-
-
-
-.top-alert {
-    font-size: 20px;
-    padding-top: 1%;
-}
-
-.top-alert img {
-    margin-top: -1%;
-    padding-right:20%;
-    max-width: 10%;
-    height: auto;
-}
-
-
-
-
+  
+  
+  
+  
+  
+  
 .number-list {
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
 }
 
 .number-deco {
-    width: 250px;
+    width: 100%;
     height: auto;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 .number-box {
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 100%;
     background-color:gray;
     color: white;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 .number-line {
     width: 0px;
-    height: 100px;
+    height: 10px;
     margin-top: 4%;
     background-color:gray;
     transform: rotate(90deg);
 }
 
 #number-box-check {
-    width: 80px;
-    height: 80px;
+    width: 8vh;
+    height: 8vh;
     border-radius: 100px;
     background: #579359;
     color: white;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 #number-check {
@@ -155,29 +197,29 @@ input:checked + .slider:before {
 
 
 
-
 .box-center {
     width: 85%;
-    height: 100%;
+    height: auto;
     border-radius: 10px;
-    padding: 30px;
-    margin-top: 30px;
+    padding: 2%;
+    margin: 5% 0 0 5%;
     background: #fff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
 }
-
+  
 .box-center-space {
     display: flex;
     flex-direction: row;
 }
+
 .box-center-column {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: 60%;
 }
-
+  
 .box-center-row {
     display: flex;
     flex-direction: row;
@@ -186,10 +228,10 @@ input:checked + .slider:before {
 }
 
 .box-center-img {
-    max-width: 50px;
+    max-width: 8%;
     height: auto;
 }
-
+  
 .box-center-text {
     padding-left: 2%;
 }
@@ -199,93 +241,94 @@ input:checked + .slider:before {
 }
 
 .box-center-avatar {
-    max-width: 34%; 
-    position: absolute; 
-    right:0; 
-    margin-right: 20px;
+    max-width: 40%;
+    margin-left: 5%;
 }
 
 .box-center-seta {
-    margin-top: -10%;
+    margin-top: -5%;
     padding-left:90%;
-    max-width: 30px;
+    max-width: 8%;
     height: auto;
 }
 
 
 
-.buttons-group {
-    width: 85%;
-    height: 100%;
-    margin: 20px;
-    margin-left: -40px;
-    text-align:left;
-    display: flex;
-    flex-direction: row;
-}
-
-
 .button {
-    background-color: #56bfbf;
-    width: 250px;
-    height: 25px;
-    border-radius: 2px;
-    border: 0;
-    font-family: Segoe UI;
-    font-weight: 600;
-    font-size:large;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-    padding: 6px;
-    margin-right: 25px;
+  background-color: #56bfbf;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: 0;
+  font-family: Segoe UI;
+  font-weight: 600;
+  font-size:large;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5%;
+  margin-right: 2%;
+  text-transform: uppercase;
 }
 
 #no {
-    background-color: #cacaca;
+  background-color: #cacaca;
 }
 
 
-.box-bottom {
-    width: 90%;
-    height: 100%;
-    padding: 30px;
-    margin-top: 30px;
-}
 
 .box-bottom-row {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
+  display: flex;
+  flex-direction: row;
+  text-align: left;
 }
 
 .box-bottom-video {
-    width: 700px;
-    height: 400px;
-    background-color: #c9c9c9;
+  width: 700px;
+  height: 300px;
+  background-color: #c9c9c9;
 }
 
 .box-bottom-text {
-    text-align: left;
-    max-width: 40%;
-    padding-inline-start: 20px;
+  text-align: left;
+  max-width: 40%;
+  padding-inline-start: 20px;
+}
+
+.box-bottom-text p {
+  color:#555;
 }
 
 
-@media screen and (max-width: 1350px) {
-    div.left-div {
-        display: none;
-    }
 
-    div.main {
-        margin-left: 0%;
-    }
+@media only screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 0fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav"
+      "switch"
+      "sidebar"
+      "main"
+      "main-steps"
+      "main-box"
+      "main-buttons"
+      "footer";
+  }
 
-    div.box-center-column {
-        max-width: 100%;
-    }
+  main img {
+    display:none;
+  }
 
-    img.box-center-avatar {
-        display: none;
-    }
+  .number-deco {
+    font-size: 10px;
+  }
+  .box-center-avatar {
+    display: none;
+  }
+
+  .box-center-column {
+    max-width: 100%;
+  }
 }
+  
