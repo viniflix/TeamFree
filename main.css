@@ -172,8 +172,8 @@ footer {
 
 .number-line {
     width: 0px;
-    height: 10px;
-    margin-top: 4%;
+    height: 80px;
+    margin: 3% 1% 0 1%;
     background-color:gray;
     transform: rotate(90deg);
 }
