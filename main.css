@@ -316,8 +316,8 @@ footer {
   .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 100%;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 2.0fr;
+    grid-template-columns: 100% 100% 100% 100% 50% 100%;
+    grid-template-rows: 0.1fr 0.5fr 0.4fr 2.0fr;
     grid-template-areas:
       "switch"
       "main"
