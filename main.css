@@ -1,5 +1,8 @@
+:root {
+  font-family: Noto Sans JP;
+}
+
 body {
-  font-family: 'Noto Sans JP', sans-serif;
   background-color: #fff;
   width:100%;
   max-width: 100%;
@@ -97,7 +100,6 @@ input:checked + .slider:before {
 
 main {
   grid-area: main;
-  border-radius: var(--main-radius);
   padding-top: 1%;
   font-size: 20px;
 }
@@ -127,11 +129,8 @@ main img {
 
 #main-buttons {
   grid-area: main-buttons;
-  width: 70%;
-  height: auto;
   margin-left: 5%;
   margin-top: 1%;
-  text-align:left;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -167,7 +166,7 @@ footer {
     border-radius: 100%;
     background-color:gray;
     color: white;
-    font-size: 3em;
+    font-size: 2ch;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +178,7 @@ footer {
     background-color:gray;
     transform: rotate(90deg);
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -189,7 +188,7 @@ footer {
     border-radius: 100px;
     background: #579359;
     color: white;
-    font-size: 3em;
+    font-size: 2ch;
 }
 
 #number-check {
@@ -222,14 +221,14 @@ footer {
 .box-center-column {
     display: flex;
     flex-direction: column;
-    max-width: 60%;
+    width: 60%;
 }
   
 .box-center-row {
     display: flex;
     flex-direction: row;
     text-align: left;
-    line-height: 1.2;
+    line-height: 1.5;
 }
 
 .box-center-img {
@@ -253,7 +252,7 @@ footer {
 .box-center-seta {
     margin-top: -5%;
     padding-left:90%;
-    max-width: 8%;
+    width: 8%;
     height: auto;
 }
 
@@ -261,17 +260,15 @@ footer {
 
 .button {
   background-color: #56bfbf;
-  width: 100%;
-  height: auto;
   border-radius: 2px;
   border: 0;
-  font-family: Segoe UI;
+  font-family:  Noto Sans JP;
   font-weight: 600;
-  font-size:large;
+  font-size: large;
   color: white;
   text-decoration: none;
   text-align: center;
-  padding: 0.5%;
+  padding: 1vh 3vh 1vh 3vh;
   margin-right: 2%;
   text-transform: uppercase;
 
