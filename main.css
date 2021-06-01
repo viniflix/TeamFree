@@ -355,8 +355,9 @@ footer {
 
   .number-list {
     align-items: flex-start;
+    max-width: 80%;
   }
-  
+
   .box-center-avatar {
     display: none;
   }
