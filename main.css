@@ -101,7 +101,7 @@ input:checked + .slider:before {
 main {
   grid-area: main;
   padding-top: 1%;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 main img {
@@ -119,7 +119,8 @@ main img {
 
 #main-steps {
   grid-area: main-steps;
-  margin: 0 5%;
+  margin: 0%;
+  border: 2px solid blue;
 }
 
 #main-box {
@@ -129,11 +130,11 @@ main img {
 
 #main-buttons {
   grid-area: main-buttons;
-  margin-left: 5%;
-  margin-top: 1%;
+  padding-left: 2%;
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 5vh;
+  position: relative;
 }
 
 footer {
@@ -161,34 +162,27 @@ footer {
 }
 
 .number-box {
-    width: 8vh;
-    height: 8vh;
+    width: 10vh;
+    height: 10vh;
     border-radius: 100%;
     background-color:gray;
     color: white;
-    font-size: 2ch;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 6vh;
 }
 
 .number-line {
-    width: 0px;
-    height: 30px;
+    width: 0vh;
+    height: 0vh;
     background-color:gray;
-    transform: rotate(90deg);
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
 }
 
 #number-box-check {
-    width: 8vh;
-    height: 8vh;
-    border-radius: 100px;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
     background: #579359;
     color: white;
-    font-size: 2ch;
+    font-size: 6vh;
 }
 
 #number-check {
@@ -202,26 +196,25 @@ footer {
 
 
 .box-center {
-    width: 85%;
-    height: auto;
     border-radius: 10px;
-    padding: 2%;
-    margin: 5% 0 0 5%;
+    margin: 2%;
+    padding: 4%;
     background: #fff;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
     -moz-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    z-index: -1;
 }
   
 .box-center-space {
     display: flex;
     flex-direction: row;
+    width: 45%;
 }
 
 .box-center-column {
     display: flex;
     flex-direction: column;
-    width: 60%;
 }
   
 .box-center-row {
@@ -229,31 +222,60 @@ footer {
     flex-direction: row;
     text-align: left;
     line-height: 1.5;
+    margin-top: 5%;
 }
 
 .box-center-img {
-    max-width: 8%;
+    width: 10%;
+    margin-right: 3vh;
     height: auto;
 }
   
 .box-center-text {
-    padding-left: 2%;
+    margin-left: 2%;
 }
 
 .box-center-text p {
     color:#555;
+    margin: 0%;
+}
+
+.box-center-text h3 {
+  margin: 0%;
+}
+
+.box-center-text h2 {
+  margin: 0%;
+  
 }
 
 .box-center-avatar {
-    max-width: 40%;
-    margin-left: 5%;
+    width: 40%;
+    height: auto;
+    position: absolute;
+    right: 1%;
+    bottom: 0%;
+    z-index: 1;
 }
 
 .box-center-seta {
-    margin-top: -5%;
-    padding-left:90%;
-    width: 8%;
+    width: 4.5vh;
     height: auto;
+    margin-left: 100%;
+    margin-top: -2%;
+
+}
+
+.title {
+  display: flex;
+  width: 120%;
+  margin-top: -5%;
+}
+
+#title-img {
+  width: 15%; 
+  margin:-2%; 
+  padding-right: 2vh;
 }
 
 
@@ -262,16 +284,15 @@ footer {
   background-color: #56bfbf;
   border-radius: 2px;
   border: 0;
+  padding: 0.5vh 3vh 0.5vh 3vh;
+  color: white;
   font-family:  Noto Sans JP;
   font-weight: 600;
-  font-size: large;
-  color: white;
+  font-size: medium;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  padding: 1vh 3vh 1vh 3vh;
-  margin-right: 2%;
-  text-transform: uppercase;
-
+  z-index: 2;
 }
 
 .button:hover {
@@ -334,9 +355,12 @@ footer {
     display: none;
   }
 
-  .box-center-column {
-    max-width: 100%;
+  .box-center-space {
+    width: 95%;
   }
 
+  .title {
+    width: 95%;
+  }
 }
   
