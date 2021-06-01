@@ -355,7 +355,38 @@ footer {
 
   .number-list {
     align-items: flex-start;
-    max-width: 80%;
+  }
+
+  .number-deco {
+      width: 100%;
+      height: auto;
+      font-weight: 200;
+  }
+
+  .number-box {
+      width: 6vh;
+      height: 6vh;
+      border-radius: 100%;
+      background-color:gray;
+      color: white;
+      font-size: 3vh;
+  }
+
+  #number-box-check {
+      width: 6vh;
+      height: 6vh;
+      border-radius: 100%;
+      background: #579359;
+      color: white;
+      font-size: 3vh;
+  }
+
+  #number-check {
+      color: #579359;
+  }
+
+  #number-desc {
+      font-weight: 600;
   }
 
   .box-center-avatar {
@@ -366,12 +397,31 @@ footer {
     width: 95%;
   }
 
-  .main-buttons {
-    max-width: 80%;
+  .box-center-seta {
+    max-width: 5%;
   }
 
   .title {
     width: 95%;
+    margin-top: 2%;
+  }
+
+  #main-buttons {
+    width: 95%;
+  }
+
+  .button {
+    background-color: #56bfbf;
+    border-radius: 2px;
+    border: 0;
+    padding: 0.5vh 3vh 0.5vh 3vh;
+    color: white;
+    font-family:  Noto Sans JP;
+    font-weight: 600;
+    font-size: small;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
   }
 }
   
