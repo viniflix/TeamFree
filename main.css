@@ -120,7 +120,6 @@ main img {
 #main-steps {
   grid-area: main-steps;
   margin: 0%;
-  border: 2px solid blue;
 }
 
 #main-box {
@@ -153,6 +152,7 @@ footer {
 .number-list {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .number-deco {
@@ -171,9 +171,10 @@ footer {
 }
 
 .number-line {
-    width: 0vh;
+    width: 25%;
     height: 0vh;
     background-color:gray;
+    margin: -2%;
 }
 
 #number-box-check {
@@ -351,6 +352,11 @@ footer {
   .number-line {
     display: none;
   }
+
+  .number-list {
+    align-items: flex-start;
+  }
+  
   .box-center-avatar {
     display: none;
   }
