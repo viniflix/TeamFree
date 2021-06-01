@@ -366,6 +366,10 @@ footer {
     width: 95%;
   }
 
+  .main-buttons {
+    max-width: 80%;
+  }
+
   .title {
     width: 95%;
   }
